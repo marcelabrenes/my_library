@@ -5,7 +5,7 @@
 <%= form_with url: "/books", method: :get, class: "form-inline" do |form| %>
  <div class="form-group mx-sm-3 mb-2">
   <%= form.label :query, "Status:" %>
-   <%= form.select :status, [["All", :all], ["In", :status], ["Out", :status]], {selected: params[:status]},class:'form-control' %>
+   <%= form.select :status, [["All", :all], ["In", :in], ["Out", :out]], {selected: params[:status]},class:'form-control' %>
    </div>
   <%= form.submit "Search", class: 'btn btn-warning mb-2' %>
 <% end %>
