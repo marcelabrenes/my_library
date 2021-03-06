@@ -24,7 +24,7 @@
 
   <div class="field">
     <%= form.label :status%>
-    <%= form.select :status,[["In", :in], ["Out", :out]], {selected: params[:status]},class:'form-control' %>
+    <%= form.select :status,[["In", :in], ["Out", :out]],{selected: params[:status]}, placeholder: 'Status'%>
   </div>
 
   <div class="field">
@@ -40,5 +40,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
-  </div>
+</div>
 <% end %>
